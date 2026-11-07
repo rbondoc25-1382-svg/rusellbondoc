@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bondoc | Portfolio </title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+<canvas id="space-bg"></canvas>
+ <div id="splash-screen">
+ <div class="splash-content">
+<img src="assets/me.1.jpg" alt="rusell bondoc" class="profile-pic">
+<h1 class="glow-title">Welcome!</h1>
+ <p class="glow-subtitle">Bondoc, Rusell Portfolio</p>
+      
+<button id="start-btn" class="start-btn">Start</button>
+
+<div id="loader-container" class="loader-container">
+ <div class="loader-track">
+ <div class="loader-bar" id="loader-bar"></div>
+</div>
+<p class="loading-text">Loading...</p>
+</div>
+</div>
+  </div>
+  <div id="main-website" style="display: none;">
+ <header class="navbar">
+
+<div class="nav-container">
+  <div class="logo">
+<img src="assets/logo.ph.jpg" alt="Rusell" class="navigation-profile-img">
+ <span>Rusell Bondoc</span>
+
+</div>
+<nav>
+  <ul class="nav-links">
+    <li><a href="#Home.html" class="active">Home</a></li> 
+    <li><a href="#aboutme.html">About me</a></li>
+    <li><a href="#Education.html">Education</a>
+    <li><a href="#myProject.html">My Project</a></li>
+    <li><a href="#contactme.html">Contact me</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+
+<section class="hero-section" id="home">
+  <div class="hero-left">
+      
+<h1>DREAMS!<br><span class="highlight">That Never Ends</span></h1>
+ <p class="hero-subtitle" id="typed-subtitle"> Information System - Student</p>
+ <p class="hero-desc">
+   Hello! Wanna know More About Me?
+</p>
+<div class="hero-buttons">
+ <a href="#projects" class="click click-primary">Project &rarr;</a>
+ <a href="#contact" class="click click-secondary">Contact me &bull;</a>
+</div>
+</div>
+<div class="hero-right">
+  <div class="photo-slider">
+    <img src="assets/stack.3.jpg" alt="Photo 1" class="slide active">
+    <img src="assets/stack.2.jpg" alt="Photo 2" class="slide">
+    <img src="assets/stack.1.jpg" alt="Photo 3" class="slide">
+  </div>
+</div>
+</section>
+  
+<div class="social-links">
+  <a href="https://web.facebook.com/rusell.bondoc" target="_blank" class="icon-links" >
+  <img src="assets/facebook.jpg" alt="facebook"></a>
+  <a href="https://www.instagram.com/jam_cyr/" target="_blank" class="icon-links">
+  <img src="assets/instagram.jpg" alt="instagram">
+  </a>
+ <a href="https://youtu.be/tm8W8XKy5Xc?list=RDtm8W8XKy5Xc" target="_blank" class="icon-links" >
+  <img src="assets/youtube.jpg" alt="youtube">
+ </a>
+</div>
+
+<section id="about" class="about-section">
+
+<h2 class="about-section-title">About Me</h2>
+ <div class="about-container">
+ <div class="about-left">
+ <h1 class="about-heading">
+  Hi, I'm <br>
+ <span class="highlight">Rusell Bondoc</span>
+</h1>
+
+<div class="about-resume">
+ <a href="#contact" class="resume">View Resume</a>
+</div>
+</div>
+
+<div class="about-center">
+  <div class="profile-frame">
+ <img src="assets/logo.ph.jpg" alt="Rusell Bondoc">
+</div>
+</div>
+
+<div class="about-right">
+ <p class="about-description">
+ 20 years old Information system student at City College Of Angeles(CCA). Dreaming/wanting to be full-stack developer with a strong foucus on any design(front, back , inline). A dedicated student who was humble enough to admit that i'm still learning coding. 
+ while also passionate enough to think that i can reach everything i dream.  
+</p>
+<a href="#my-project" class="about-link">View Projects &rarr;</a>
+</div>
+
+</div>
+
+<section class="hobbies-grid-section">
+ <div class="hobby-preview-header">
+<h3 class="hobbies-label">HOBBIES & FAVORITES</h3>
+<h1 id="hobby-title" class="preview-title">keshi</h1>
+ <p id="hobby-desc" class="preview-desc">
+</p>
+</div>
+
+<div id="dynamic-bg" class="dynamic-bg-layer"></div>
+
+<div class="media-grid">
+    
+<div class="grid-card" 
+ data-title="keshi" 
+ data-desc="Repear"
+ data-bg="assets/keshi.jpg"
+ data-video="assets/keshi-repear.mp4">
+<img src="assets/keshi.jpg" alt="keshi">
+</div>
+
+<div class="grid-card" 
+ data-title="STARFALL" 
+ data-desc="Intentions."
+ data-bg="assets/starfall.jpg"
+ data-video="assets/intentions.mp4">
+<img src="assets/starfall.jpg" alt="Zenitsu">
+</div>
+
+<div class="grid-card" 
+ data-title="THE WEEKEND" 
+ data-desc="save your tears."
+ data-bg="assets/save your tears.jpg"
+ data-video="assets/save-your-tears.mp4">
+<img src="assets/save your tears.jpg" alt="save your tears">
+</div>
+
+<div class="grid-card" 
+ data-title="CHASE ATLANTIC" 
+ data-desc="Consume"
+ data-bg="assets/consume.jpg"
+ data-video="assets/consume.mp4">
+<img src="assets/consume.jpg" alt="consume">
+</div>
+</div>
+
+<div id="video-modal" class="video-modal">
+ <div class="video-wrapper">
+ <span id="close-modal" class="close-btn">&times;</span>
+<video id="modal-video-player" controls>
+ <source id="video-source" src="" type="video/mp4">
+</video>
+</div>
+</div>
+
+<section class="marquee-section">
+ <h2 class="section-title">Favorite Movies</h2>
+  
+<div class="marquee-container">
+ <div class="marquee-track">
+         
+<a href="https://youtu.be/cSp1dM2Vj48" target="_blank" rel="ready-player-one" class="movie-card">
+ <img src="assets/ready-player-one.jpg" alt="kingsman">
+<div class="movie-info">
+ <h3>READY PLAYER ONE</h3>
+ <span>Sci-Fi / Drama</span>
+ </div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=6gVPM3dGVoU" target="_blank" rel="i'm not a robot" class="movie-card">
+ <img src="assets/i_m not a robot.jpg" alt="i'm not a robot">
+<div class="movie-info">
+  <h3>I'm not a Robot</h3>
+  <span>Romance / Drama</span>
+</div>
+</a>
+
+<a href="https://youtu.be/6Nxc-3WpMbg" target="_blank" rel="kingsman" class="movie-card">
+ <img src="assets/Kingsman.jpg" alt="kingsman">
+<div class="movie-info">
+ <h3>Kingsman- the golden circle</h3>
+ <span>Sci-Fi / Action</span>
+</div>
+</a>
+
+<a href="https://youtu.be/m4NCribDx4U" target="_blank" rel="kingsman" class="movie-card">
+ <img src="assets/kingsman.1.jpg" alt="Kingsman the secret service">
+<div class="movie-info">
+  <h3>Kingsman- the secret service</h3>
+   <span>Action / Drama</span>
+</div>
+</a>
+        
+<a href="https://youtu.be/cSp1dM2Vj48" target="_blank" rel="ready-player-one" class="movie-card">
+ <img src="assets/ready-player-one.jpg" alt="kingsman">
+<div class="movie-info">
+  <h3>READY PLAYER ONE</h3>
+  <span>Sci-Fi / Drama</span>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=6gVPM3dGVoU" target="_blank" rel="i'm not a robot" class="movie-card">
+ <img src="assets/i_m not a robot.jpg" alt="i'm not a robot">
+<div class="movie-info">
+ <h3>I'm not a Robot</h3>
+ <span>Romance / Drama</span>
+</div>
+</a>
+
+<a href="https://youtu.be/6Nxc-3WpMbg" target="_blank" rel="kingsman" class="movie-card">
+ <img src="assets/Kingsman.jpg" alt="kingsman">
+<div class="movie-info">
+ <h3>Kingsman- the golden circle</h3>
+  <span>Sci-Fi / Action</span>
+</div>
+</a>
+
+<a href="https://youtu.be/m4NCribDx4U" target="_blank" rel="kingsman" class="movie-card">
+ <img src="assets/kingsman.1.jpg" alt="Kingsman the secret service">
+<div class="movie-info">
+  <h3>Kingsman- the secret service</h3>
+  <span>Action / Drama</span>
+</div>
+</a>
+</div>
+  </div>
+</section>
+
+<section class="hobbies-section">
+<h2 class="section-title">Favorite Games & Hobbies</h2>
+  
+ <div class="hobbies-grid">
+    
+<div class="hobby-card">
+ <div class="hobby-icon">♟️</div>
+ <div class="hobby-content">
+  <h3>Chess</h3>
+</div>
+</div>
+
+<div class="hobby-card">
+ <div class="hobby-icon">⚔️</div>
+<div class="hobby-content">
+  <h3>League of Legends & Wild Rift</h3>
+</div>
+</div>
+
+<div class="hobby-card">
+ <div class="hobby-icon">🛡️</div>
+<div class="hobby-content">
+  <h3>Mobile Legends</h3>
+</div>
+</div>
+
+<div class="hobby-card">
+  <div class="hobby-icon">🎸</div>
+<div class="hobby-content">
+  <h3>Playing Guitar</h3>
+</div>
+</div>
+</div>
+</section>
+
+<section class="education-section">
+<h2 class="section-title">Educational Journey</h2>
+  
+<div class="tree-timeline">
+    
+<div class="tree-item left">
+ <div class="tree-dot"></div>
+<div class="tree-card">
+ <img src="assets/Nortville 15 elem.jpg" alt="Northville 15 Integrated School" class="school-logo">
+  <h3>Northville 15 Integrated School</h3>
+  <span class="timeline-date">Elementary</span>
+  <p>Graduated elementary school.</p>
+</div>
+</div>
+
+<div class="tree-item right">
+  <div class="tree-dot"></div>
+<div class="tree-card">
+  <img src="assets/baliti integrated school.jpg" alt="Baliti Integrated School" class="school-logo">
+  <h3>Baliti Integrated School</h3>
+  <span class="timeline-date">Junior High School</span>
+  <p>Completed Junior High School.</p>
+</div>
+</div>
+
+<div class="tree-item left">
+ <div class="tree-dot"></div>
+<div class="tree-card">
+  <img src="assets/Panipuan.jpg" alt="Panipuan High School" class="school-logo">
+  <h3>Panipuan High School</h3>
+  <span class="timeline-date">Senior High School</span>
+  <p>ABM Track</p>
+</div>
+</div>
+
+<div class="tree-item right">
+  <div class="tree-dot"></div>
+<div class="tree-card">
+  <img src="assets/CCA.jpg" alt="City College of Angeles" class="school-logo">
+  <h3>City College of Angeles</h3>
+  <span class="timeline-date">2024 – Present</span>
+  <p>BSIT • 2nd Year College</p>
+</div>
+</div>
+  </div>
+</section>
+
+<section class="projects-section">
+  <h2 class="section-title">Featured Projects</h2>
+  
+<div class="desktop-folder-system">  
+    <input type="radio" name="desktop-project" id="proj-1" checked>
+    <input type="radio" name="desktop-project" id="proj-2">
+    <input type="radio" name="desktop-project" id="proj-3">
+    <input type="radio" name="desktop-project" id="proj-4">
+
+<div class="folder-grid">
+  
+<label for="proj-1" class="standalone-folder">
+<div class="folder-icon-wrapper">
+  <img src="assets/J.jpg" alt="Java Logo" class="project-tech-logo">
+</div>
+ <span class="folder-label">Linked List Ops</span>
+</label>
+
+<label for="proj-2" class="standalone-folder">
+<div class="folder-icon-wrapper">
+ <img src="assets/C.jpg" alt="C Language Logo" class="project-tech-logo">
+</div>
+ <span class="folder-label">Tic-Tac-Toe AI</span>
+</label>
+
+<label for="proj-3" class="standalone-folder">
+ <div class="folder-icon-wrapper">
+ <img src="assets/html.jpg" alt="HTML Logo" class="project-tech-logo">
+</div>
+ <span class="folder-label">CCA Website</span>
+</label>
+
+<label for="proj-4" class="standalone-folder">
+  <div class="folder-icon-wrapper">
+    <img src="assets/data-modeling.jpg" alt="Database Logo" class="project-tech-logo">
+  </div>
+  <span class="folder-label">Database Design</span>
+  </label>
+</div>
+
+ <div class="project-details-window">
+      
+<div class="project-card-detail detail-1">
+<div class="project-header">
+ <h3>Basic Linked List Operations</h3>
+<span class="tech-badge">Java (Data Structure)</span>
+</div>
+<p class="project-desc">Developed core algorithms for linear search, insertion, deletion, node counting, and structural reversals.</p>
+<ul class="project-features">
+  <li>Listing and traversing nodes</li>
+  <li>Counting total active nodes</li>
+  <li>Deleting specific nodes & mid-list insertions</li>
+  <li>Reversing node structures</li>
+ </ul>
+</div>
+
+<div class="project-card-detail detail-2">
+ <div class="project-header">
+<h3>Tic-Tac-Toe Game with AI & History</h3>
+  <span class="tech-badge">C Language</span>
+</div>
+ <p class="project-desc">A C-based Tic-Tac-Toe game featuring an automated computer opponent with decision-making logic and a history logger.</p>
+<ul class="project-features">
+  <li>Interactive X/O board interface</li>
+  <li>First to 3 match format to declare the winner</li>
+  <li>Automated computer opponent strategy</li>
+  <li>Match history logging system written to file</li>
+ </ul>
+</div>
+
+<div class="project-card-detail detail-3">
+ <div class="project-header">
+<h3>CCA Website</h3>
+ <span class="tech-badge">HTML Hyperlinks / Web Structure</span>
+</div>
+ <p class="project-desc">An interactive website featuring City College of Angeles structural pages integrated with custom navigational routing.</p>
+<ul class="project-features">
+ <li>Organized layout with interactive pictures</li>
+ <li>Structured hyperlinking across campus modules</li>
+ <li>Responsive content sections</li>
+</ul>
+</div>
+
+<div class="project-card-detail detail-4">
+ <div class="project-header">
+<h3>Database Design - Bookstore Management</h3>
+  <span class="tech-badge">Data Modeling & ERD Schema</span>
+</div>
+ <p class="project-desc">Conceptual database design, ERD modeling, and relational schema specification for a Bookstore Management System.</p>
+<ul class="project-features">
+  <li>Designed entity structures for books, authors, customers, and orders</li>
+  <li>Enforced Primary Keys (PK) and Foreign Keys (FK) relationships</li>
+  <li>Mapped attribute data types using INT, VARCHAR, DECIMAL, and TEXT</li>
+</ul>
+ </div>
+ </div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+ <h2 class="section-title">Contact Me</h2>
+  
+<div class="contact-container">
+    
+ <div class="contact-box">
+<p class="contact-subtitle">Feel free to ask questions or reach out about potential projects!</p>
+      
+<form class="contact-form" action="#" method="POST">
+<div class="form-group">
+ <label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email:</label>
+ <input type="email" id="email" name="email" placeholder="Your Email" required>
+</div>
+
+<div class="form-group">
+<label for="message">Message:</label>
+ <textarea id="message" name="message" rows="4" placeholder="Your Message..." required></textarea>
+</div>
+
+<button type="submit" class="submit-button">Send Message</button>
+</form></div>
+
+ <div class="contact-image-container">
+ <img src="assets/cat.jpg" alt="Cute CAT" class="contact-image"></div>
+
+</div>
+<footer class="portfolio-footer"><p>&copy; 2026 Rusell Bondoc. All rights reserved.</p>
+</footer>
+</section>
+
+</div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
